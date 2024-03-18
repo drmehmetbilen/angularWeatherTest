@@ -1,0 +1,21 @@
+<div class="card text-center">
+    <div class="card-header">
+      {{cityName}}
+    </div>
+    <div class="card-body">
+      <h5 class="card-title"></h5>
+      <p class="card-text">
+    
+        Temperature : {{weatherData["sicaklik"] | number : '1.2-2' }} C<br>
+        Hum. : {{weatherData["nem"]}} % <br>
+        Wind : {{weatherData["ruzgar"] |  number : "1.2-2"}} Km/h <br>
+        Rain : {{weatherData["yagmur"]}} % <br>
+
+        
+    </p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+    <div class="card-footer text-muted">
+      2 days ago
+    </div>
+  </div>
